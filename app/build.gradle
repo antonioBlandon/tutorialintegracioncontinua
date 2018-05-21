@@ -32,14 +32,17 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
 
+/*
 sonarqube {
     properties {
         property "sonar.projectName", "tutorialintegracioncontinua"
-        property "sonar.projectKey", "co.com.ceiba.tutorialintegracioncontinua"
+        property "sonar.projectKey", "tutorialintegracioncontinua"
         property "sonar.host.url", "https://www.sonarqube.com/"
         property "sonar.language", "java"
+        property "sonar.login", "admin"
+        property "sonar.password", "admin"
         property "sonar.sources", "app/src/main/"
-        property "sonar.login", "antonioBlandon"
-        property "sonar.password", "7o,5oy13"
+        property "sonar.java.sources", "app/src/main/"
+        property "sonar.java.binaries", "app/build/intermediates/classes/debug/co/com/ceiba/tutorialintegracion"
     }
-}
+}*/
