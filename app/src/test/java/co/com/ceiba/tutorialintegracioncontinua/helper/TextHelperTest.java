@@ -23,7 +23,7 @@ public class TextHelperTest {
 
     @Test
     public void testGetText(){
-        Assert.assertEquals(helper.getText(49),"low");
+        Assert.assertEquals(helper.getText(59),"high");
     }
 
 }
