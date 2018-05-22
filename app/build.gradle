@@ -36,18 +36,13 @@ sonarqube {
     properties {
         property "sonar.projectName", "tutorialintegracioncontinua"
         property "sonar.projectKey", "tutorialintegracioncontinua"
-        property "sonar.host.url", "http://localhost:9000"
         property "sonar.language", "java"
-        property "sonar.login", "admin"
-        property "sonar.password", "admin"
         property "sonar.sources", "src/main/java"
         property "sonar.java.binaries", "build/intermediates/classes/debug"
         property "sonar.tests", "src/test/java, src/androidTest/java"
-        property "sonar.jacoco.reportPath", "build/jacoco/testDebugUnitTest.exec"
+        property "sonar.jacoco.reportPaths", "build/jacoco/testDebugUnitTest.exec"
         property "sonar.java.coveragePlugin", "jacoco"
         property "sonar.junit.reportsPath", "build/test-results/testDebugUnitTest"
-        property "sonar.libraries", libs
-        property "sonar.java.test.libraries", libs
     }
 }
 
