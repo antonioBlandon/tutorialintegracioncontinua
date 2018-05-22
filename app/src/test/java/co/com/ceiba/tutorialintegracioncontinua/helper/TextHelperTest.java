@@ -11,19 +11,22 @@ public class TextHelperTest {
 
     private TextHelper helper = null;
 
-    @Before
-    public void setUp(){
+    @Test
+    public void testGetText1(){
         helper = TextHelper.getInstance();
-    }
-
-    @After
-    public void tearDown() throws Exception{
-        helper = null;
+        Assert.assertEquals(helper.getText(50),"high");
     }
 
     @Test
-    public void testGetText(){
-        Assert.assertEquals(helper.getText(59),"high");
+    public void testGetText2(){
+        helper = TextHelper.getInstance();
+        Assert.assertEquals(helper.getText(0),"low");
+    }
+
+    @Test
+    public void testGetText3(){
+        helper = TextHelper.getInstance();
+        Assert.assertNotNull(helper);
     }
 
 }
