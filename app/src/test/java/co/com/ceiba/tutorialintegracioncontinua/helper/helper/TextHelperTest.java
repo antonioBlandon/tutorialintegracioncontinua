@@ -1,9 +1,11 @@
-package co.com.ceiba.tutorialintegracioncontinua.helper;
+package co.com.ceiba.tutorialintegracioncontinua.helper.helper;
 
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
+import co.com.ceiba.tutorialintegracioncontinua.helper.TextHelper;
 
 import static org.junit.Assert.*;
 
